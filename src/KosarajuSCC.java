@@ -49,12 +49,10 @@ public class KosarajuSCC {
             System.out.println(k.count);
             LinkedList<LinkedList<Integer>> all = new LinkedList<>();
             for(int i = 0;i<graph.V();i++){
-                LinkedList temp = new LinkedList<Integer>();
+                LinkedList<Integer> temp = new LinkedList<Integer>();
                 all.push(temp);
             }
-            for(int i = 0;i<graph.V();i++){
-                all.get(k.id[i]).push(i);
-            }
+            for(int i = 0;i<graph.V();i++) all.get(k.id[i]).push(i);
 
             for(LinkedList<Integer> li : all){
                 for(Integer e:li){
