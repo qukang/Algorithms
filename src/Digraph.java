@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 /**
  * Created by qukan on 2017/6/9.
@@ -24,10 +25,21 @@ public class Digraph {
         this(Integer.valueOf(reader.readLine()));
         int E = Integer.valueOf(reader.readLine());
         for(int i = 0;i<E;i++){
-            String tmp = reader.readLine();
+            String tmp_ = reader.readLine();
+            String tmp = tmp_.trim();
             String[] strs = tmp.split(" ");
             int v = Integer.valueOf(strs[0]);
             int w = Integer.valueOf(strs[1]);
+            addEdge(v,w);
+        }
+    }
+
+    public Digraph(Scanner scanner) throws IOException{
+        this(scanner.nextInt());
+        int E = scanner.nextInt();
+        for(int i = 0;i<E;i++){
+            int v = scanner.nextInt();
+            int w = scanner.nextInt();
             addEdge(v,w);
         }
     }
