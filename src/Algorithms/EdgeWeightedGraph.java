@@ -17,7 +17,8 @@ public class EdgeWeightedGraph {
     public EdgeWeightedGraph(int V) {
         this.V = V;
         this.E = 0;
-        adj = (LinkedList<Edge>[]) new LinkedList[];
+        adj = (LinkedList<Edge>[]) new LinkedList[V];
+        edges = new HashSet<>();
         for(int i = 0;i<V;i++){
             adj[i] = new LinkedList<>();
         }
