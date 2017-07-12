@@ -26,7 +26,7 @@ public class EdgeWeightedGraph {
 
     public EdgeWeightedGraph(Scanner scanner) {
         this(scanner.nextInt());
-        this.E = scanner.nextInt();
+        int E = scanner.nextInt();
         for(int i = 0;i<E;i++){
             int v = scanner.nextInt();
             int w = scanner.nextInt();
@@ -42,6 +42,7 @@ public class EdgeWeightedGraph {
         adj[either].addLast(e);
         adj[other].addLast(e);
         edges.add(e);
+        E++;
     }
 
     public int V(){
