@@ -15,7 +15,7 @@ public class DijstraSP
     private LinkedList<Double> pq;
 
 
-    public DijstraSP(EdgeWeightedDigrpah G,int s){
+    /*public DijstraSP(EdgeWeightedDigrpah G,int s){
         edgeTo = new DirectedEdge[G.V()];
         distTo = new double[G.V()];
         pq = new LinkedList;
@@ -56,7 +56,7 @@ public class DijstraSP
 
     public Stack<DirectedEdge> pathTO(int v){
 
-    }
+    }*/
 
 
 

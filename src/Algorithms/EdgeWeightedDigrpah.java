@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class EdgeWeightedDigrpah {
 
     private final int V;
-    private int E:
+    private int E;
     private LinkedList<DirectedEdge>[] adj;
     private HashSet<DirectedEdge> edges;
 
